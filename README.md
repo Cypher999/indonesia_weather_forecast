@@ -11,3 +11,5 @@ python main.py
 ```
 
 compatible with linux,windows and android (using termux / python compiler application)
+
+made with python 3.9
