@@ -51,7 +51,7 @@ class prakiraan_cuaca:
     def lihat_cuaca(self):
         daftar_cuaca = self.isi[self.provinsi]["data_kota"][self.kota]["prakiraan_cuaca_kota"][self.tanggal]["prakiraan_cuaca"]
         for dc in daftar_cuaca:
-            print("[{}]\n Hour : {} \nCondition :{} \nTemperature :{} \nHumidity :{} \nWind speed & direction ".format(daftar_cuaca.index(dc)+1, dc["jam"], dc["kondisi"],dc["suhu"], dc["kelembaban"], dc["arah_mata_angin"]))
+            print("[{}]\n Hour : {} \nCondition :{} \nTemperature :{} \nHumidity :{} \nWind speed & direction ={}".format(daftar_cuaca.index(dc)+1, dc["jam"], dc["kondisi"],dc["suhu"], dc["kelembaban"], dc["arah_mata_angin"]))
         input()
     def lihat_opsi(self):
         prov=self.isi[self.provinsi]["provinsi"]
